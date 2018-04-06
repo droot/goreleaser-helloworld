@@ -2,7 +2,11 @@
 # Make sure to check the documentation at http://goreleaser.com
 builds:
 - main: main.go
-  binary: drum-roll
+  binary: hello
+- goos:
+  - windows
+  - darwin
+  - linux
 - env:
   - CGO_ENABLED=0
 archive:
