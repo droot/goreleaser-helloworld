@@ -29,4 +29,4 @@ steps:
 secrets:
 - kmsKeyName: projects/kustomize-199618/locations/global/keyRings/github-tokens/cryptoKeys/gh-release-token
   secretEnv:
-   GITHUB_TOKEN: CiQAyrREbLHg0EedXGRv1iuFYMnKl5YtjQuesg0MXPZ2Ah5EOaQSUgA0W+xUxCjlVqwbzSwUABpUkS838EwkwCfdonIyr41KFthZL8jylp+hmLz+NFfULvWx7wTpzcKSMHzSQl3735eB3Gjj95YTe2vJw7W/FLSXKM4=
+   GITHUB_TOKEN: CiQAyrREbPgXJOeT7M3t+WlxkhXwlMPudixBeiyWTjmLOMLqdK4SUQA0W+xUmDJKAhyfHCcwqSEzUn9OwKC7XAYcmwe0CCKTCbPbDgmioDK24q3LVapndXNvnnHvCjhOJNEr1o+P1DCF+LlzYV2YL8lP09rrKrslPg==
