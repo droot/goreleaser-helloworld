@@ -22,8 +22,7 @@
 
 steps:
 - name: "gcr.io/kustomize-199618/golang_with_goreleaser:1.10-stretch"
-  #args: ["/goreleaser", "--snapshot",  "--skip-publish",  "--rm-dist",  "--debug"]
-  args: ["/goreleaser", "--debug"]
+  args: ["/goreleaser", "--rm-dist", "--debug"]
   env:
   - 'GOOS=${_GOOS}'
   - 'GOARCH=${_GOARCH}'
