@@ -26,3 +26,4 @@ steps:
   env:
   - 'GOOS=${_GOOS}'
   - 'GOARCH=${_GOARCH}'
+  - 'GITHUB_TOKEN=${_GITHUB_TOKEN}'
