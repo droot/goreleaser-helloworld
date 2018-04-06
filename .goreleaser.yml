@@ -28,4 +28,5 @@ changelog:
     - '^test:'
 release:
   github:
+    owner: droot
     name: goreleaser-helloworld
