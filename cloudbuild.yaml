@@ -23,7 +23,7 @@
 steps:
 - name: "gcr.io/kustomize-199618/golang_with_goreleaser:1.10-stretch"
   args: ["/goreleaser", "--rm-dist", "--debug"]
-  secretEnv:['GITHUB_TOKEN']
+  secretEnv: ['GITHUB_TOKEN']
 secrets:
 - kmsKeyName: projects/kustomize-199618/locations/global/keyRings/github-tokens/cryptoKeys/gh-release-token
   secretEnv:
