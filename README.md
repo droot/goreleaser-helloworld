@@ -11,3 +11,6 @@ Follow the steps at this link --> https://cloud.google.com/container-builder/doc
  gcloud kms keyrings create github-tokens --location=global
  - Create the Key
  gcloud kms keys create gh-release-token --location=global --keyring=github-tokens --purpose=encryption
+ - Give IAM permissions
+ - Encrypt the key
+ echo -n $MY_TOKEN |gcloud kms encrypt --plaintext-file=- --ciphertext-file=- --location=global --keyring=github-tokens --key=gh-release-token | base64
