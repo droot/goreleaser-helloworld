@@ -11,3 +11,13 @@ Follow the steps at this link --> https://cloud.google.com/container-builder/doc
  gcloud kms keyrings create github-tokens --location=global
  - Create the Key
  gcloud kms keys create gh-release-token --location=global --keyring=github-tokens --purpose=encryption
+
+
+ Publishing GoReleaser docker images:
+
+ Go to GoReleaser project:
+  1. build the image: docker build -t golang_with_goreleaser:1.10-stretch .
+  2. Run docker tag --> docker tag golang_with_goreleaser gcr.io/kustomize-199618/golang_with_goreleaser:1.10-stretch
+  3. gcloud auth configure-docker
+  4. docker push gcr.io/kustomize-199618/golang_with_goreleaser:1.10-stretch 
+
